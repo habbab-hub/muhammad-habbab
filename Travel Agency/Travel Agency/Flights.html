@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery_main_file.js"></script>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.2.89/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Flights</title>
+</head>
+
+<body>
+
+    <!--  TOP BAR START  -->
+
+    <div class="container-fluid">
+        <div class="header-top-bar">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-7" style="text-align: right;">
+                    <span class="mdi mdi-email-outline"></span><a href="#" class="link">support@travelagency.com</a>
+                    <span class="mdi mdi-phone-in-talk"></span><span class="num"> +917 3386831 </span>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-6" style="text-align: right;">
+                    <select id="opt">
+                        <option>English</option>
+                        <option>German</option>
+                        <option>Russian</option>
+                    </select>
+                    <a href="#" class="link-2"><span class="mdi mdi-facebook facebook"></span></a>
+                    <a href="#" class="link-2"><span class="mdi mdi-twitter twitter"></span></a>
+                    <a href="#" class="link-2"><span class="mdi mdi-google-plus plus"></span></a>
+                    <a href="#" class="link-2"><span class="mdi mdi-instagram insta"></span></a>
+                    <a href="#" class="link-2"><span class="mdi mdi-vimeo vimeo"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   Top Bar End   -->
+
+    <!--  NAVBAR START  -->
+
+    <div class="main-header">
+        <div class="container-fluid">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light static-top" style="padding: 0px;">
+                <div class="container" style="padding: 0px 8px;">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" class="logo">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto" style="text-align: center;">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" style="text-decoration: none;">HOME
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="text-decoration: none;">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="text-decoration: none;">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="text-decoration: none;">Contact US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Navbar End -->
+
+    <!--   Navs Start   -->
+
+    <div class="container flight">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="home" aria-selected="true">Round Trip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="profile" aria-selected="false">One Way</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#car" role="tab" aria-controls="contact" aria-selected="false">Multi City</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="">
+            <div class="tab-content">
+                <div id="flight" class="tab-pane active">
+                    <div class="row">
+                        <div class=" col-sm-6 col-md-4 col-lg-2 from-search-field-btn-box">
+                            <span class="sp1">From</span>
+                            <div class="from-search-field">
+                                <img src="images/vector.jpg" height="20px" width="20px">
+                                <div class="search-text-field">
+                                    <input type="text" name="" placeholder="From" class="input-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-4 col-lg-2 from-search-field-btn-box">
+                            <span class="sp1">To</span>
+                            <div class="from-search-field">
+                                <img src="images/vector.jpg" height="20px" width="20px">
+                                <div class="search-text-field">
+                                    <input type="text" name="" placeholder="To" class="input-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-4 col-lg-2 from-search-field-btn-box">
+                            <span class="sp1">Depart</span>
+                            <div class="from-search-field">
+                                <div class="search-text-field">
+                                    <input type="date" name="" placeholder="To" class="input-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-4 col-lg-2 from-search-field-btn-box">
+                            <span class="sp1">Return</span>
+                            <div class="from-search-field">
+                                <div class="search-text-field">
+                                    <input type="date" name="" placeholder="To" class="input-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-4 col-lg-2 from-search-field-btn-box">
+                            <span class="sp1">Travelers</span>
+                            <div class="from-search-field">
+                                <span class="mdi mdi-account-multiple-outline" style="font-size: 16px;"></span>
+                                <div class="search-text-field">
+                                    <input type="text" name="" placeholder="To" class="input-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-4 col-lg-1 btn-4">
+                            <a href="#" class="hvr-grow-shadow"><input type="button" value="Search" class="btn-5"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="hotel" class="tab-pane fade">
+                    <div class="row">
+                        <div class=" col-sm-6 col-md-6 col-lg-3 from-search-field-btn-box">
+                            <span class="sp1">From</span>
+                            <div class="from-search-field-1">
+                                <img src="images/vector.jpg" height="20px" width="20px">
+                                <div class="search-text-field-1">
+                                    <input type="text" name="" placeholder="From" class="input-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-6 col-lg-3 from-search-field-btn-box">
+                            <span class="sp1">To</span>
+                            <div class="from-search-field-1">
+                                <img src="images/vector.jpg" height="20px" width="20px">
+                                <div class="search-text-field-1">
+                                    <input type="text" name="" placeholder="To" class="input-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-6 col-lg-2 from-search-field-btn-box">
+                            <span class="sp1">Depart</span>
+                            <div class="from-search-field-1">
+                                <div class="search-text-field-1">
+                                    <input type="date" name="" placeholder="To" class="input-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-6 col-lg-2 from-search-field-btn-box">
+                            <span class="sp1">Travelers</span>
+                            <div class="from-search-field-1">
+                                <span class="mdi mdi-account-multiple-outline" style="font-size: 16px;"></span>
+                                <div class="search-text-field-1">
+                                    <input type="text" name="" placeholder="To" class="input-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-5 col-lg-1 btn-4">
+                            <a href="#" class="hvr-grow-shadow"><input type="button" value="Search" class="btn-5"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="car" class="tab-pane fade">
+                    <div class="row main-search-form">
+                        <div class="col-lg-2 col-sm-6 col-md-6 main-search-form-p">
+                            <div class="fligh-searchform-inner">
+                                <small>Country:</small>
+                                <div class="fligh-searchform-inner-box">
+                                    <select class="opt-1">
+                                        <option class="bg">Please Select</option>
+                                        <option class="bg-1">Alaska</option>
+                                        <option class="bg-1">Bahamas</option>
+                                        <option class="bg-1">Bermuda</option>
+                                        <option class="bg-1">Canada</option>
+                                        <option class="bg-1">Caribbean</option>
+                                        <option class="bg-1">Europe</option>
+                                        <option class="bg-1">Hawaii</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-2 col-sm-6 col-md-6 main-search-form-p" style="margin-left: -15px;">
+                            <div class="fligh-searchform-inner">
+                                <small>City:</small>
+                                <div class="fligh-searchform-inner-box">
+                                    <select class="opt-1">
+                                        <option class="bg">Please Select</option>
+                                        <option class="bg-1">Alaska</option>
+                                        <option class="bg-1">Bahamas</option>
+                                        <option class="bg-1">Bermuda</option>
+                                        <option class="bg-1">Canada</option>
+                                        <option class="bg-1">Caribbean</option>
+                                        <option class="bg-1">Europe</option>
+                                        <option class="bg-1">Hawaii</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-2 col-sm-6 col-md-6 main-search-form-p" style="margin-left: -15px;">
+                            <div class="fligh-searchform-inner">
+                                <small>Location:</small>
+                                <div class="fligh-searchform-inner-box">
+                                    <select class="opt-1">
+                                        <option class="bg">Please Select</option>
+                                        <option class="bg-1">Alaska</option>
+                                        <option class="bg-1">Bahamas</option>
+                                        <option class="bg-1">Bermuda</option>
+                                        <option class="bg-1">Canada</option>
+                                        <option class="bg-1">Caribbean</option>
+                                        <option class="bg-1">Europe</option>
+                                        <option class="bg-1">Hawaii</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-md-6 main-search-form-p" style="margin-right: 10px;">
+                            <div class="fligh-searchform-inner">
+                                <small>Pick up Date:</small>
+                                <div class="fligh-searchform-inner-box" style="height: 10px;">
+                                    <input type="date" style="border: 1px solid #dfdede; padding: 5px 8px; margin-left: -20px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-md-6 main-search-form-p" style="margin-right: 10px;">
+                            <div class="fligh-searchform-inner">
+                                <small>Drop off Date:</small>
+                                <div class="fligh-searchform-inner-box" style="height: 10px;">
+                                    <input type="date" style="border: 1px solid #dfdede; padding: 5px 8px; margin-left: -10px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6" style="margin-top: 10px;">
+                            <div class="button1_wrapper">
+                                <button type="submit" class="btn-default btn-form1-submit">Search</button>
+                            </div>
+                        </div>
+                        <div class="stops-and-flex-search-section">
+                            <small>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div id="cruises" class="tab-pane fade">
+                    <div class="row main-search-form">
+                        <div class="col-lg-2 col-sm-6 col-md-6 main-search-form-p">
+                            <div class="fligh-searchform-inner">
+                                <small>Sail To:</small>
+                                <div class="fligh-searchform-inner-box">
+                                    <select class="opt-1">
+                                        <option class="bg">Please Select</option>
+                                        <option class="bg-1">Alaska</option>
+                                        <option class="bg-1">Bahamas</option>
+                                        <option class="bg-1">Bermuda</option>
+                                        <option class="bg-1">Canada</option>
+                                        <option class="bg-1">Caribbean</option>
+                                        <option class="bg-1">Europe</option>
+                                        <option class="bg-1">Hawaii</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-2 col-sm-6 col-md-6 main-search-form-p" style="margin-left: -15px;">
+                            <div class="fligh-searchform-inner">
+                                <small>Sail From:</small>
+                                <div class="fligh-searchform-inner-box">
+                                    <select class="opt-1">
+                                        <option class="bg">Please Select</option>
+                                        <option class="bg-1">Alaska</option>
+                                        <option class="bg-1">Bahamas</option>
+                                        <option class="bg-1">Bermuda</option>
+                                        <option class="bg-1">Canada</option>
+                                        <option class="bg-1">Caribbean</option>
+                                        <option class="bg-1">Europe</option>
+                                        <option class="bg-1">Hawaii</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-md-6 main-search-form-p" style="margin-right: 10px;">
+                            <div class="fligh-searchform-inner">
+                                <small>Start Date:</small>
+                                <div class="fligh-searchform-inner-box" style="height: 10px;">
+                                    <input type="date" style="border: 1px solid #dfdede; padding: 5px 8px; margin-left: -20px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-2 col-md-2 main-search-form-p" style="margin-right: 10px;">
+                            <div class="fligh-searchform-inner">
+                                <small>End of Date:</small>
+                                <div class="fligh-searchform-inner-box" style="height: 10px;">
+                                    <input type="date" style="border: 1px solid #dfdede; padding: 5px 8px; margin-left: -10px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-2 col-sm-2 col-md-2 main-search-form-p" style="margin-left: -15px;">
+                            <div class="fligh-searchform-inner">
+                                <small>Cruise Ship:</small>
+                                <div class="fligh-searchform-inner-box">
+                                    <select class="opt-1">
+                                        <option class="bg">Please Select</option>
+                                        <option class="bg-1">Alaska</option>
+                                        <option class="bg-1">Bahamas</option>
+                                        <option class="bg-1">Bermuda</option>
+                                        <option class="bg-1">Canada</option>
+                                        <option class="bg-1">Caribbean</option>
+                                        <option class="bg-1">Europe</option>
+                                        <option class="bg-1">Hawaii</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-2 col-md-2" style="margin-top: 10px;">
+                            <div class="button1_wrapper">
+                                <button type="submit" class="btn-default btn-form1-submit">Search</button>
+                            </div>
+                        </div>
+                        <div class="stops-and-flex-search-section">
+                            <small>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--   Navs End   -->
+
+    <!--   Filters Start   -->
+
+    <div class="container-fluid" style="background-color: #fafafa; max-width: auto; padding-top: 10px; padding-bottom: 10px;">
+        <div class="row filter-sort" style="margin-bottom: 20px; align-items: center; padding: 0px;">
+            <!-- Button trigger modal -->
+            <div class="col-lg-6 col-6" style="padding: 0px; border-right: 1px solid #e6e5e5;">
+                <button type="button" data-toggle="modal" data-target="#exampleModal1" class="sort-btn"><span class="mdi mdi-sort"></span>Sort</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Sort By</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding: 0px;">
+                                <a href="#">
+                                    <div class="sort-1" style="border-top: none;">Price</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Fly Score</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Duration</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Best Value</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Earliest outbound departure</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Earliest outbound arival</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Earliest return departure</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Earliest return arival</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Latest outbound departure</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Latest outbound arival</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Earliest outbound departure</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Earliest outbound arival</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-6" style="padding: 0px;">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="sort-btn"><span class="mdi mdi-tune"></span>Filter</button>
+            </div>
+            <!-- Modal Start -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Reset</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="c1" style="border-bottom: none;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span class="sp2">Stops</span>
+                                        <span class="mdi mdi-chevron-down" data-toggle="collapse" data-target="#demo-1"></span>
+                                    </div>
+                                    <div id="demo-1" class="collapse">
+                                        <input type="radio" name="a">&nbsp;<span class="sp3">NON STOP</span><br>
+                                        <input type="radio" name="a">&nbsp;<span class="sp3">1 STOP</span><br>
+                                        <input type="radio" name="a">&nbsp;<span class="sp3">2 STOP</span><br>
+                                    </div>
+                                    <div class="c1" style="border-bottom: none;">
+                                        <div style="display: flex; justify-content: space-between;">
+                                            <span class="sp2">Airlines</span>
+                                            <span class="mdi mdi-chevron-down" data-toggle="collapse" data-target="#demo-2"></span>
+                                        </div>
+                                        <div class="price" id="demo-2" class="collapse">
+                                            <div>
+                                                <input type="checkbox">&nbsp;<span>British Airways</span><br>
+                                                <input type="checkbox">&nbsp;<span>Emirates</span><br>
+                                                <input type="checkbox">&nbsp;<span>Etihad</span><br>
+                                                <input type="checkbox">&nbsp;<span>Qatar Airways</span><br>
+                                                <input type="checkbox">&nbsp;<span>Multipule Airways</span><br>
+                                            </div>
+                                            <div class="sp4">
+                                                <span>PKR 167,377</span><br>
+                                                <span>PKR 168,524</span><br>
+                                                <span>PKR 145,337</span><br>
+                                                <span>PKR 227,618</span><br>
+                                                <span>PKR 176,980</span><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-role="page" class="range" style="border-bottom: none;">
+                                        <div data-role="main" class="ui-content">
+                                            <form method="post" action="/action_page_post.php">
+                                                <div data-role="rangeslider" style="display: flex; justify-content: space-between;">
+                                                    <label for="price-min">Price:</label>
+                                                    <span class="mdi mdi-chevron-down" data-toggle="collapse" data-target="#demo-3"></span>
+                                                </div>
+                                                <div id="demo-3" class="collapse">
+                                                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="cls" data-dismiss="modal">Close</button>
+                            <button type="button" class="save">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #fafafa; max-width: auto; padding-top: 10px; padding-bottom: 10px; padding-left: 15px;">
+        <div class="row" style="background-color: #fafafa; padding: 0px;">
+            <div class="col-lg-3 filters">
+                <div class="fltr">
+                    <div class="c1">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span class="sp2">Stops</span>
+                            <span class="mdi mdi-chevron-down" data-toggle="collapse" data-target="#demo2"></span>
+                        </div>
+                        <div id="demo2" class="collapse">
+                            <input type="radio" name="a">&nbsp;<span class="sp3">NON STOP</span><br>
+                            <input type="radio" name="a">&nbsp;<span class="sp3">1 STOP</span><br>
+                            <input type="radio" name="a">&nbsp;<span class="sp3">2 STOP</span><br>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span class="sp2">Airlines</span>
+                            <span class="mdi mdi-chevron-down" data-toggle="collapse" data-target="#demo1"></span>
+                        </div>
+                        <div class="price" id="demo1" class="collapse">
+                            <div>
+                                <input type="checkbox">&nbsp;<span>British Airways</span><br>
+                                <input type="checkbox">&nbsp;<span>Emirates</span><br>
+                                <input type="checkbox">&nbsp;<span>Etihad</span><br>
+                                <input type="checkbox">&nbsp;<span>Qatar Airways</span><br>
+                                <input type="checkbox">&nbsp;<span>Multipule Airways</span><br>
+                            </div>
+                            <div class="sp4">
+                                <span>PKR 167,377</span><br>
+                                <span>PKR 168,524</span><br>
+                                <span>PKR 145,337</span><br>
+                                <span>PKR 227,618</span><br>
+                                <span>PKR 176,980</span><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-role="page" class="range">
+                        <div data-role="main" class="ui-content">
+                            <form method="post" action="/action_page_post.php">
+                                <div data-role="rangeslider" style="display: flex; justify-content: space-between;">
+                                    <label for="price-min">Price:</label>
+                                    <span class="mdi mdi-chevron-down" data-toggle="collapse" data-target="#demo3"></span>
+                                </div>
+                                <div id="demo3" class="collapse">
+                                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-8 col-md-11 col-sm-11 srt">
+                <div class="sort">
+                    <span>Sort by:</span>
+                    <select class="sort_btn">
+                        <option>Best Value</option>
+                        <option>Price</option>
+                        <option>Fly Score</option>
+                        <option>Duration</option>
+                        <option>Earliest outbound departure</option>
+                        <option>Earliest outbound arival</option>
+                        <option>Earliest return departure</option>
+                        <option>Earliest return arival</option>
+                        <option>Latest outbound departure</option>
+                        <option>Latest outbound arival</option>
+                        <option>Latest return departure</option>
+                        <option>Latest return arival</option>
+                    </select>
+                </div>
+
+
+
+                <div class="box col-lg-6 col-md-6 col-sm-6">
+                    <div class="box-content col-lg-8 col-md-12 col-sm-12">
+                        <div class="content-1">
+                            <div class="air-logo">
+                                <img src="images/BritishAirways.png" height="50px" width="50px">
+                            </div>
+                            <div class="text-5">
+                                <div>
+                                    <span class="time">3:45 AM - 12:25 PM</span><br>
+                                    <span class="t2">LHE - LHR, British Airways</span>
+                                </div>
+                                <div style="text-align: right;">
+                                    <span class="t1">12h 40m</span><br>
+                                    <span class="t3">1 stop, DOH</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-2">
+                            <div class="air-logo">
+                                <img src="images/PakistanInternational.png" height="50px" width="50px">
+                            </div>
+                            <div class="text-5">
+                                <div>
+                                    <span class="time">5:00 PM - 4:40 AM<sup style="color: orange;">+1</sup></span><br>
+                                    <span class="t2">LHR - LHE, Pakistan Intl Airlines</span>
+                                </div>
+                                <div style="text-align: right;">
+                                    <span class="t1">7h 40m</span><br>
+                                    <span class="t3">Nonstop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content1 col-lg-4 col-md-12 col-sm-12">
+                        <div>
+                            <div class="div-1">
+                                <span class="prc">PKR 145,143</span><br>
+                                <span class="deal">2 deals</span>
+                            </div>
+                            <div class="div-2">
+                                <a href="Flight.html"><button class="btn-6">Select<span class="mdi mdi-chevron-right"></span></button></a><br>
+                                <a href="#"><span class="deal">View Deals</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box col-lg-6 col-md-6 col-sm-6">
+                    <div class="box-content col-lg-8 col-md-12 col-sm-12">
+                        <div class="content-1">
+                            <div class="air-logo">
+                                <img src="images/EtihadAirways.png" height="50px" width="50px">
+                            </div>
+                            <div class="text-5">
+                                <div>
+                                    <span class="time">3:45 AM - 12:25 PM</span><br>
+                                    <span class="t2">LHE - LHR, British Airways</span>
+                                </div>
+                                <div style="text-align: right;">
+                                    <span class="t1">12h 40m</span><br>
+                                    <span class="t3">1 stop, DOH</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-2">
+                            <div class="air-logo">
+                                <img src="images/EtihadAirways.png" height="50px" width="50px">
+                            </div>
+                            <div class="text-5">
+                                <div>
+                                    <span class="time">5:00 PM - 4:40 AM<sup style="color: orange;">+2</sup></span><br>
+                                    <span class="t2">LHR - LHE, Pakistan Intl Airlines</span>
+                                </div>
+                                <div style="text-align: right;">
+                                    <span class="t1">7h 40m</span><br>
+                                    <span class="t3">Nonstop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content1 col-lg-4 col-md-12 col-sm-12">
+                        <div>
+                            <div class="div-1">
+                                <span class="prc">PKR 145,143</span><br>
+                                <span class="deal">2 deals</span>
+                            </div>
+                            <div class="div-2">
+                                <a href="Flight.html"><button class="btn-6">Select<span class="mdi mdi-chevron-right"></span></button></a><br>
+                                <a href="#"><span class="deal">View Deals</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="box col-lg-6 col-md-6 col-sm-6">
+                    <div class="box-content col-lg-8 col-md-12 col-sm-12">
+                        <div class="content-1">
+                            <div class="air-logo">
+                                <img src="images/Emirates2.png" height="50px" width="50px">
+                            </div>
+                            <div class="text-5">
+                                <div>
+                                    <span class="time">3:45 AM - 12:25 PM</span><br>
+                                    <span class="t2">LHE - LHR, British Airways</span>
+                                </div>
+                                <div style="text-align: right;">
+                                    <span class="t1">12h 40m</span><br>
+                                    <span class="t3">1 stop, DOH</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-2">
+                            <div class="air-logo">
+                                <img src="images/PakistanInternational.png" height="50px" width="50px">
+                            </div>
+                            <div class="text-5">
+                                <div>
+                                    <span class="time">5:00 PM - 4:40 AM<sup style="color: orange;">+1</sup></span><br>
+                                    <span class="t2">LHR - LHE, Pakistan Intl Airlines</span>
+                                </div>
+                                <div style="text-align: right;">
+                                    <span class="t1">7h 40m</span><br>
+                                    <span class="t3">Nonstop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content1 col-lg-4 col-md-12 col-sm-12">
+                        <div>
+                            <div class="div-1">
+                                <span class="prc">PKR 145,143</span><br>
+                                <span class="deal">2 deals</span>
+                            </div>
+                            <div class="div-2">
+                                <a href="Flight.html"><button class="btn-6">Select<span class="mdi mdi-chevron-right"></span></button></a><br>
+                                <a href="#"><span class="deal">View Deals</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--   Filters End   -->
+
+    <!--   Footer Start   -->
+
+
+    <div class="bot1_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="logo2_wrapper">
+                        <a href="index.html" class="logo2">
+                            <img src="images/logo2.png" alt="" class="img-responsive">
+                        </a>
+                    </div>
+                    <p>
+                        Nam liber tempor cum soluta nobis option congue nihil imperdiet doming id quod mazim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                    </p>
+                    <p>
+                        <a href="#" class="btn-default btn2">Read More</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="bot1_title">Travel Specialists</div>
+                    <ul class="ul1">
+                        <li><a href="#">First Class Flights</a></li>
+                        <li><a href="#">Accessible Travel</a></li>
+                        <li><a href="#">Amazing Cruises</a></li>
+                    </ul>
+
+                    <div class="social2_wrapper">
+                        <ul class="social2 clearfix">
+                            <li class="nav1">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav2">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav3">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav4">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav5">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav6">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="bot1_title">Our Twitter</div>
+                    <div class="twits1">
+                        <div class="twit1">
+                            <a href="#"> @travel</a> Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                            <div class="date">5 minutes ago</div>
+                        </div>
+                        <div class="twit1">
+                            <a href="#">@leo</a> Nam liber tempor cum soluta nobis option congue nihil imperdiet doming id quod mazim.
+                            <div class="date">2 days ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="bot1_title">Newsletter</div>
+                    <div class="newsletter_block">
+                        <div class="txt1">Inspiration, ideas, news and your feedback.</div>
+                        <div class="newsletter-wrapper clearfix">
+                            <form class="newsletter" action="javascript:;">
+                                <input type="text" name="s" value="Email Address" onblur="if(this.value=='') this.value='Email Address'" onfocus="if(this.value =='Email Address' ) this.value=''">
+                                <a href="#" class="btn-default btn3">SUBMIT</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="phone2">1-917-338-6831</div>
+                    <div class="support1"><a href="#">support@templates-support.com</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Top footer End  -->
+
+    <div class="bot2_wrapper">
+        <div class="container">
+            <div class="left_side">
+                Copyright © 2017 <a href="#" target="_blank"><strong>MECOVACHE</strong></a> <span>|</span> <a href="#">Privacy Policy</a> <span>|</span> <a href="#">About Us</a> <span>|</span> <a href="#">FAQ</a> <span>|</span> <a href="#">Contact Support</a>
+            </div>
+            <div class="right_side">Designed by <a href="#" target="_blank"><strong>MECOVACHE</strong></a></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

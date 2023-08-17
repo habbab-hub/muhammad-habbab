@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery_main_file.js"></script>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.2.89/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hotel</title>
+</head>
+
+<body>
+
+    <!--  TOP BAR START  -->
+
+    <div class="container-fluid">
+        <div class="header-top-bar">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-7" style="text-align: right;">
+                    <span class="mdi mdi-email-outline"></span><a href="#" class="link">support@travelagency.com</a>
+                    <span class="mdi mdi-phone-in-talk"></span><span class="num"> +917 3386831 </span>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-6" style="text-align: right;">
+                    <select id="opt">
+                        <option>English</option>
+                        <option>German</option>
+                        <option>Russian</option>
+                    </select>
+                    <a href="#" class="link-2"><span class="mdi mdi-facebook facebook"></span></a>
+                    <a href="#" class="link-2"><span class="mdi mdi-twitter twitter"></span></a>
+                    <a href="#" class="link-2"><span class="mdi mdi-google-plus plus"></span></a>
+                    <a href="#" class="link-2"><span class="mdi mdi-instagram insta"></span></a>
+                    <a href="#" class="link-2"><span class="mdi mdi-vimeo vimeo"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   Top Bar End   -->
+
+    <!--  NAVBAR START  -->
+
+    <div class="main-header">
+        <div class="container-fluid">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light static-top" style="padding: 0px;">
+                <div class="container" style="padding: 0px 8px;">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" class="logo">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto" style="text-align: center;">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" style="text-decoration: none;">HOME
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="text-decoration: none;">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="text-decoration: none;">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="text-decoration: none;">Contact US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Navbar End -->
+
+
+    <!--   Filters Start   -->
+
+    <div class="container-fluid" style="background-color: #fafafa; max-width: auto; padding-top: 10px; padding-bottom: 10px;">
+        <div class="row filter-sort" style="margin-bottom: 20px; align-items: center; padding: 0px;">
+            <!-- Button trigger modal -->
+            <div class="col-lg-6 col-6" style="padding: 0px; border-right: 1px solid #e6e5e5;">
+                <button type="button" data-toggle="modal" data-target="#exampleModal1" class="sort-btn"><span class="mdi mdi-sort"></span>Sort</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Sort By</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding: 0px;">
+                                <a href="#">
+                                    <div class="sort-1" style="border-top: none;">Traveler Ranked</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Best Value</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Price(low to high)</div>
+                                </a>
+                                <a href="#">
+                                    <div class="sort-1">Distance from city center</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-6" style="padding: 0px;">
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="sort-btn"><span class="mdi mdi-tune"></span>Filter</button>
+            </div>
+            <!-- Modal Start -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Reset</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="c1" style="border-bottom: none;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span class="sp2">Distance from</span>
+                                    </div>
+                                    <div>
+                                        <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000"><br>
+                                        <input type="radio" name="a">&nbsp;<span class="sp3">Big Ben</span><br>
+                                        <input type="radio" name="a">&nbsp;<span class="sp3">Tower of London</span><br>
+                                        <input type="radio" name="a">&nbsp;<span class="sp3">Tower Bridge</span><br>
+                                        <input type="radio" name="a">&nbsp;<span class="sp3">Buckingham Palace</span>
+                                    </div>
+                                    <div class="c1" style="border-bottom: none;">
+                                        <div style="display: flex; justify-content: space-between;">
+                                            <span class="sp2">Property types</span>
+                                        </div>
+                                        <div class="price">
+                                            <div>
+                                                <input type="checkbox">&nbsp;<span>Hotels</span><br>
+                                                <input type="checkbox">&nbsp;<span>B&Bs & Inns</span><br>
+                                                <input type="checkbox">&nbsp;<span>Condos</span><br>
+                                                <input type="checkbox">&nbsp;<span>Hostels</span><br>
+                                            </div>
+                                            <div class="sp4">
+                                                <span>850</span><br>
+                                                <span>259</span><br>
+                                                <span>117</span><br>
+                                                <span>76</span><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c1">
+                                        <div style="display: flex; justify-content: space-between;">
+                                            <span class="sp2">Popular</span>
+                                        </div>
+                                        <div class="price">
+                                            <div>
+                                                <input type="checkbox">&nbsp;<span>Breakfast included</span><br>
+                                                <input type="checkbox">&nbsp;<span>4 stars & up</span><br>
+                                                <input type="checkbox">&nbsp;<span>4 stars</span><br>
+                                                <input type="checkbox">&nbsp;<span>Air conditioning</span><br>
+                                            </div>
+                                            <div class="sp4">
+                                                <span>334</span><br>
+                                                <span>751</span><br>
+                                                <span>345</span><br>
+                                                <span>608</span><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-role="page" class="range" style="border-bottom: none;">
+                                        <div data-role="main" class="ui-content">
+                                            <form method="post" action="/action_page_post.php">
+                                                <div data-role="rangeslider" style="display: flex; justify-content: space-between;">
+                                                    <label for="price-min">Price:</label>
+                                                </div>
+                                                <div>
+                                                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="cls" data-dismiss="modal">Close</button>
+                            <button type="button" class="save">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #fafafa; max-width: auto; padding-top: 10px; padding-bottom: 10px; padding-left: 15px;">
+        <div class="row" style="background-color: #fafafa; padding: 0px;">
+            <div class="col-lg-2 filters-1">
+                <div class="fltr">
+                    <div class="c1">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span class="sp2">Distance from</span>
+                        </div>
+                        <div>
+                            <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000"><br>
+                            <input type="radio" name="a">&nbsp;<span class="sp3">Big Ben</span><br>
+                            <input type="radio" name="a">&nbsp;<span class="sp3">Tower of London</span><br>
+                            <input type="radio" name="a">&nbsp;<span class="sp3">Tower Bridge</span><br>
+                            <input type="radio" name="a">&nbsp;<span class="sp3">Buckingham Palace</span>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span class="sp2">Property types</span>
+                        </div>
+                        <div class="price">
+                            <div>
+                                <input type="checkbox">&nbsp;<span>Hotels</span><br>
+                                <input type="checkbox">&nbsp;<span>B&Bs & Inns</span><br>
+                                <input type="checkbox">&nbsp;<span>Condos</span><br>
+                                <input type="checkbox">&nbsp;<span>Hostels</span><br>
+                            </div>
+                            <div class="sp4">
+                                <span>850</span><br>
+                                <span>259</span><br>
+                                <span>117</span><br>
+                                <span>76</span><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span class="sp2">Popular</span>
+                        </div>
+                        <div class="price">
+                            <div>
+                                <input type="checkbox">&nbsp;<span>Breakfast included</span><br>
+                                <input type="checkbox">&nbsp;<span>4 stars & up</span><br>
+                                <input type="checkbox">&nbsp;<span>4 stars</span><br>
+                                <input type="checkbox">&nbsp;<span>Air conditioning</span><br>
+                            </div>
+                            <div class="sp4">
+                                <span>334</span><br>
+                                <span>751</span><br>
+                                <span>345</span><br>
+                                <span>608</span><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-role="page" class="range">
+                        <div data-role="main" class="ui-content">
+                            <form method="post" action="/action_page_post.php">
+                                <div data-role="rangeslider" style="display: flex; justify-content: space-between;">
+                                    <label for="price-min">Price:</label>
+                                </div>
+                                <div>
+                                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-9 col-md-12 col-sm-12 srt">
+                <div class="sort">
+                    <span>Sort by:</span>
+                    <select class="sort_btn">
+                        <option>Best Value</option>
+                        <option>Traveler Ranked</option>
+                        <option>Price(low to high)</option>
+                        <option>Distance to city center</option>
+                    </select>
+                </div>
+                <!--   Filter End  -->
+
+                <!--  Caroussel Start  -->
+
+                <div class="box-1 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box-content-1 col-lg-4 col-md-12 col-sm-12">
+                        <div id="slider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#slider" data-slide-to="1"></li>
+                                <li data-target="#slider" data-slide-to="2"></li>
+                                <li data-target="#slider" data-slide-to="3"></li>
+                                <li data-target="#slider" data-slide-to="4"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100 carousel-img" src="images/slider1.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 carousel-img" src="images/slider2.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 carousel-img" src="images/slider3.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 carousel-img" src="images/slider4.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 carousel-img" src="images/slider5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content-2 col-lg-8 col-md-12 col-sm-12">
+                        <h5><strong>Park Plaza Westminster Bridge London</strong></h5>
+                        <div class="row">
+                            <div class="col-lg-4 d1">
+                                <div class="div-1">
+                                    <img src="images/Agoda.png" height="40px" width="90px">
+                                </div>
+                                <div class="div-3">
+                                    <span>PKR 29,813</span>
+                                </div>
+                                <div class="div-2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a><br>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d2">
+                                <div class="div-1">
+                                    <span>Booking.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,052</span>
+                                </div>
+                                <div class="div-2">
+                                    <span>Hotels.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,108</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d3">
+                                <div class="div-1">
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content-3">
+                        <div class="row">
+                            <h6>Park Plaza Westminster Bridge London</h6>
+                            <div class="col-md-12 col-sm-12">
+                                <div>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 box-content_3">
+                                <div>
+                                    <span>PKR 29,813</span><br>
+                                    <span class="deal">Agoda.com <span class="mdi mdi-arrow-top-right"></span></span>
+                                    </span>
+                                </div>
+                                <div class="div_2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-1 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box-content-1 col-lg-4 col-md-12 col-sm-12">
+                        <div id="slider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#slider" data-slide-to="1"></li>
+                                <li data-target="#slider" data-slide-to="2"></li>
+                                <li data-target="#slider" data-slide-to="3"></li>
+                                <li data-target="#slider" data-slide-to="4"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/slider1.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider2.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider3.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider4.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider5.jpg" height="240px">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="box-content-2 col-lg-8 col-md-12 col-sm-12">
+                        <h5><strong>Park Plaza Westminster Bridge London</strong></h5>
+                        <div class="row">
+                            <div class="col-lg-4 d1">
+                                <div class="div-1">
+                                    <img src="images/expediaib.png" height="40px" width="90px">
+                                </div>
+                                <div class="div-3">
+                                    <span>PKR 29,813</span>
+                                </div>
+                                <div class="div-2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a><br>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d2">
+                                <div class="div-1">
+                                    <span>Booking.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,052</span>
+                                </div>
+                                <div class="div-2">
+                                    <span>Hotels.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,108</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 d3">
+                                <div class="div-1">
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content-3">
+                        <div class="row">
+                            <h6>Park Plaza Westminster Bridge London</h6>
+                            <div class="col-md-12 col-sm-12">
+                                <div>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 box-content_3">
+                                <div>
+                                    <span>PKR 29,813</span><br>
+                                    <span class="deal">Agoda.com <span class="mdi mdi-arrow-top-right"></span></span>
+                                    </span>
+                                </div>
+                                <div class="div_2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-1 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box-content-1 col-lg-4 col-md-12 col-sm-12">
+                        <div id="slider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#slider" data-slide-to="1"></li>
+                                <li data-target="#slider" data-slide-to="2"></li>
+                                <li data-target="#slider" data-slide-to="3"></li>
+                                <li data-target="#slider" data-slide-to="4"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/slider1.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider2.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider3.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider4.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider5.jpg" height="240px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content-2 col-lg-8 col-md-12 col-sm-12">
+                        <h5><strong>Park Plaza Westminster Bridge London</strong></h5>
+                        <div class="row">
+                            <div class="col-lg-4 d1">
+                                <div class="div-1">
+                                    <img src="images/booking logo.png" height="40px" width="90px">
+                                </div>
+                                <div class="div-3">
+                                    <span>PKR 29,813</span>
+                                </div>
+                                <div class="div-2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a><br>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d2">
+                                <div class="div-1">
+                                    <span>Booking.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,052</span>
+                                </div>
+                                <div class="div-2">
+                                    <span>Hotels.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,108</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 d3">
+                                <div class="div-1">
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content-3">
+                        <div class="row">
+                            <h6>Park Plaza Westminster Bridge London</h6>
+                            <div class="col-md-12 col-sm-12">
+                                <div>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 box-content_3">
+                                <div>
+                                    <span>PKR 29,813</span><br>
+                                    <span class="deal">Agoda.com <span class="mdi mdi-arrow-top-right"></span></span>
+                                    </span>
+                                </div>
+                                <div class="div_2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 srt-1">
+                <div class="sort">
+                    <span>Sort by:</span>
+                    <select class="sort_btn">
+                        <option>Best Value</option>
+                        <option>Traveler Ranked</option>
+                        <option>Price(low to high)</option>
+                        <option>Distance to city center</option>
+                    </select>
+                </div>
+                <!--   Filter End  -->
+
+                <!--  Caroussel Start  -->
+
+                <div class="box-1 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box-content-1 col-lg-4 col-md-12 col-sm-12">
+                        <div id="slider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#slider" data-slide-to="1"></li>
+                                <li data-target="#slider" data-slide-to="2"></li>
+                                <li data-target="#slider" data-slide-to="3"></li>
+                                <li data-target="#slider" data-slide-to="4"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/slider1.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider2.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider3.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider4.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider5.jpg" height="240px">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="box-content-2 col-lg-8 col-md-12 col-sm-12">
+                        <h5><strong>Park Plaza Westminster Bridge London</strong></h5>
+                        <div class="row">
+                            <div class="col-lg-4 d1">
+                                <div class="div-1">
+                                    <img src="images/expediaib.png" height="40px" width="90px">
+                                </div>
+                                <div class="div-3">
+                                    <span>PKR 29,813</span>
+                                </div>
+                                <div class="div-2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a><br>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d2">
+                                <div class="div-1">
+                                    <span>Booking.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,052</span>
+                                </div>
+                                <div class="div-2">
+                                    <span>Hotels.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,108</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 d3">
+                                <div class="div-1">
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content-3">
+                        <div class="row">
+                            <h6>Park Plaza Westminster Bridge London</h6>
+                            <div class="col-md-12 col-sm-12">
+                                <div>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 box-content_3">
+                                <div>
+                                    <span>PKR 29,813</span><br>
+                                    <span class="deal">Agoda.com <span class="mdi mdi-arrow-top-right"></span></span>
+                                    </span>
+                                </div>
+                                <div class="div_2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-1 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box-content-1 col-lg-4 col-md-12 col-sm-12">
+                        <div id="slider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#slider" data-slide-to="1"></li>
+                                <li data-target="#slider" data-slide-to="2"></li>
+                                <li data-target="#slider" data-slide-to="3"></li>
+                                <li data-target="#slider" data-slide-to="4"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/slider1.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider2.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider3.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider4.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider5.jpg" height="240px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content-2 col-lg-8 col-md-12 col-sm-12">
+                        <h5><strong>Park Plaza Westminster Bridge London</strong></h5>
+                        <div class="row">
+                            <div class="col-lg-4 d1">
+                                <div class="div-1">
+                                    <img src="images/booking logo.png" height="40px" width="90px">
+                                </div>
+                                <div class="div-3">
+                                    <span>PKR 29,813</span>
+                                </div>
+                                <div class="div-2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a><br>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d2">
+                                <div class="div-1">
+                                    <span>Booking.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,052</span>
+                                </div>
+                                <div class="div-2">
+                                    <span>Hotels.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,108</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 d3">
+                                <div class="div-1">
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content-3">
+                        <div class="row">
+                            <h6>Park Plaza Westminster Bridge London</h6>
+                            <div class="col-md-12 col-sm-12">
+                                <div>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 box-content_3">
+                                <div>
+                                    <span>PKR 29,813</span><br>
+                                    <span class="deal">Agoda.com <span class="mdi mdi-arrow-top-right"></span></span>
+                                    </span>
+                                </div>
+                                <div class="div_2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-1 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box-content-1 col-lg-4 col-md-12 col-sm-12">
+                        <div id="slider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#slider" data-slide-to="1"></li>
+                                <li data-target="#slider" data-slide-to="2"></li>
+                                <li data-target="#slider" data-slide-to="3"></li>
+                                <li data-target="#slider" data-slide-to="4"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/slider1.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider2.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider3.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider4.jpg" height="240px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/slider5.jpg" height="240px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content-2 col-lg-8 col-md-12 col-sm-12">
+                        <h5><strong>Park Plaza Westminster Bridge London</strong></h5>
+                        <div class="row">
+                            <div class="col-lg-4 d1">
+                                <div class="div-1">
+                                    <img src="images/booking logo.png" height="40px" width="90px">
+                                </div>
+                                <div class="div-3">
+                                    <span>PKR 29,813</span>
+                                </div>
+                                <div class="div-2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a><br>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d2">
+                                <div class="div-1">
+                                    <span>Booking.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,052</span>
+                                </div>
+                                <div class="div-2">
+                                    <span>Hotels.com<span class="mdi mdi-arrow-top-right"></span></span><br>
+                                    <span class="deal">PKR 34,108</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 d3">
+                                <div class="div-1">
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content-3">
+                        <div class="row">
+                            <h6>Park Plaza Westminster Bridge London</h6>
+                            <div class="col-md-12 col-sm-12">
+                                <div>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle checked"></span>
+                                    <span class="fa fa-circle"></span>
+                                    <span class="deal">22,232 reviews</span>
+                                </div>
+                                <div class="div_2">
+                                    <span>#1 Best Value of 3,769 places to stay in London</span>
+                                </div>
+                                <div>
+                                    <span class="mdi mdi-swim"></span><span class="pool">Pool</span><br>
+                                    <span class="mdi mdi-silverware-variant"></span><span class="pool">Resturant</span><br>
+                                    <img src="images/handwash-icon.svg" height="18px" width="18px"><span class="pool">Taking safety measures</span><br>
+                                    <span class="mdi mdi-label"></span><span class="pool">Special offer</span><br>
+                                    <span class="mdi mdi-web"></span><a href="#"><span class="pool">Visit hotel website <span class="mdi mdi-arrow-top-right"></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 box-content_3">
+                                <div>
+                                    <span>PKR 29,813</span><br>
+                                    <span class="deal">Agoda.com <span class="mdi mdi-arrow-top-right"></span></span>
+                                    </span>
+                                </div>
+                                <div class="div_2">
+                                    <a href="Hotel_Detail.html"><button class="btn_6">Select</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--   Carousel End   -->
+
+    <!--   Footer Start   -->
+
+
+    <div class="bot1_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="logo2_wrapper">
+                        <a href="index.html" class="logo2">
+                            <img src="images/logo2.png" alt="" class="img-responsive">
+                        </a>
+                    </div>
+                    <p>
+                        Nam liber tempor cum soluta nobis option congue nihil imperdiet doming id quod mazim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                    </p>
+                    <p>
+                        <a href="#" class="btn-default btn2">Read More</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="bot1_title">Travel Specialists</div>
+                    <ul class="ul1">
+                        <li><a href="#">First Class Flights</a></li>
+                        <li><a href="#">Accessible Travel</a></li>
+                        <li><a href="#">Amazing Cruises</a></li>
+                    </ul>
+
+                    <div class="social2_wrapper">
+                        <ul class="social2 clearfix">
+                            <li class="nav1">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav2">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav3">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav4">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav5">
+                                <a href="#"></a>
+                            </li>
+                            <li class="nav6">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="bot1_title">Our Twitter</div>
+                    <div class="twits1">
+                        <div class="twit1">
+                            <a href="#"> @travel</a> Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                            <div class="date">5 minutes ago</div>
+                        </div>
+                        <div class="twit1">
+                            <a href="#">@leo</a> Nam liber tempor cum soluta nobis option congue nihil imperdiet doming id quod mazim.
+                            <div class="date">2 days ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="bot1_title">Newsletter</div>
+                    <div class="newsletter_block">
+                        <div class="txt1">Inspiration, ideas, news and your feedback.</div>
+                        <div class="newsletter-wrapper clearfix">
+                            <form class="newsletter" action="javascript:;">
+                                <input type="text" name="s" value="Email Address" onblur="if(this.value=='') this.value='Email Address'" onfocus="if(this.value =='Email Address' ) this.value=''">
+                                <a href="#" class="btn-default btn3">SUBMIT</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="phone2">1-917-338-6831</div>
+                    <div class="support1"><a href="#">support@templates-support.com</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Top footer End  -->
+
+    <div class="bot2_wrapper">
+        <div class="container">
+            <div class="left_side">
+                Copyright © 2017 <a href="#" target="_blank"><strong>MECOVACHE</strong></a> <span>|</span> <a href="#">Privacy Policy</a> <span>|</span> <a href="#">About Us</a> <span>|</span> <a href="#">FAQ</a> <span>|</span> <a href="#">Contact Support</a>
+            </div>
+            <div class="right_side">Designed by <a href="#" target="_blank"><strong>MECOVACHE</strong></a></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
